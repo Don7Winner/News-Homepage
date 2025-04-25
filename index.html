@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>News homepage</title>
+    <!-- THE LINK FOR THE FONT STYLE  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- THE LINK FOR THE CSS STYLESHEET  -->
+    <link rel="stylesheet" href="CSS/Stylesheet.css" />
+    <!-- THE LINK FOR THE MEDIA QUERY  -->
+    <link rel="stylesheet" href="CSS/Responsiveness.css" />
+  </head>
+  <body>
+    <main>
+      <div class="pop-up-container popUp"></div>
+      <nav>
+        <img src="assets/images/logo.svg" alt="Logo image" />
+        <ul>
+          <img
+            src="assets/images/icon-menu-close.svg"
+            alt="close button"
+            id="close-btn"
+          />
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+        <img src="assets/images/icon-menu.svg" alt="icon menu" id="menu-bar" />
+      </nav>
+      <div class="grid-container">
+        <div class="img-container" style="grid-area: box1">
+          <img src="assets/images/image-web-3-desktop.jpg" alt="" />
+        </div>
+        <div class="first-container" style="grid-area: box2">
+          <p>The Bright Future of Web 3.0?</p>
+        </div>
+
+        <div class="second-container" style="grid-area: box3">
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button>Read more</button>
+        </div>
+
+        <div class="third-container" style="grid-area: box4">
+          <div>
+            <h1>New</h1>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <hr />
+          <div>
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <hr />
+          <div>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div class="item-list">
+          <div class="sm-img-container">
+            <img src="assets/images/image-retro-pcs.jpg" alt="Retro image" />
+          </div>
+          <div>
+            <h2>01</h2>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+
+        <div class="item-list">
+          <div class="sm-img-container">
+            <img
+              src="assets/images/image-top-laptops.jpg"
+              alt="Laptops image"
+            />
+          </div>
+          <div>
+            <h2>02</h2>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+
+        <div class="item-list">
+          <div class="sm-img-container">
+            <img
+              src="assets/images/image-gaming-growth.jpg"
+              alt="gaming growth image"
+            />
+          </div>
+          <div>
+            <h2>03</h2>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="CSS/index.js"></script>
+  </body>
+</html>
